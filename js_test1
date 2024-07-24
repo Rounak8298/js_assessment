@@ -1,0 +1,30 @@
+const rounak =[]
+function minrounak(my,haircolor,dress,token){
+    const raj={
+        "me":my,
+        "hair":haircolor,
+        "formal":dress,
+        "crypto":token
+
+    }
+    rounak.push(raj);
+    console.log("faded" +my);
+}
+function listrounak(){
+    for(let i=0;i<rounak.length;i++){
+        console.log("ID:" +(i+1));
+        console.log(rounak[i].me);
+        console.log(rounak[i].hair);
+        console.log(rounak[i].formal);
+        console.log(rounak[i].crypto);
+    }
+}
+function getrounak(){
+    console.log(rounak.length);
+}
+minrounak("abc","def","ghi","jkl");
+minrounak("ab","de","gh","jk");
+minrounak("a","d","g","j");
+minrounak("bc","ef","hi","kl");
+listrounak();
+getrounak();
