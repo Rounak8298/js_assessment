@@ -1,0 +1,31 @@
+const NFT =[]
+function minNFT(my,haircolor,dress,token){
+    const arr={
+        "me":my,
+        "hair":haircolor,
+        "formal":dress,
+        "crypto":token
+
+    }
+    NFT.push(arr);
+    console.log("faded" +my);
+}
+function listNFT(){
+    for(let i=0;i<NFT.length;i++){
+        console.log("ID:" +(i+1));
+        console.log(NFT[i].me);
+        console.log(NFT[i].hair);
+        console.log(NFT[i].formal);
+        console.log(NFT[i].crypto);
+    }
+}
+function getNFT(){
+    console.log(NFT.length);
+}
+minNFT("abc","def","ghi","jkl");
+minNFT("ab","de","gh","jk");
+minNFT("a","d","g","j");
+minNFT("bc","ef","hi","kl");
+listNFT();
+getNFT();
+console.log()
